@@ -34,20 +34,20 @@ class Main {
   public static String reverseString (String str)
   {
 
-    char[] newarr = str.toCharArray();
+    char[] chararr = str.toCharArray();
 
     int start = 0;
     int end = str.length()-1;
 
     while (start < end)
       {
-        swap(newarr, start, end);
+        swap(chararr, start, end);
 
         start++;
         end--;
       }
 
-    String newStr = String.valueOf(newarr);
+    String newStr = String.valueOf(chararr);
 
     return newStr;
   
